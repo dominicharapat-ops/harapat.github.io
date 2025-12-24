@@ -1,1 +1,0 @@
-# harapat.github.io
