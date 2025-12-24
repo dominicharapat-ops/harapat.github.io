@@ -1,1 +1,204 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zuhause mit Aussicht – Buchungsübersicht</title>
+  <meta name="description" content="Buchungsübersicht: Zuhause mit Aussicht, Neustadt in Holstein." />
+  <style>
+    :root{
+      --bg:#0b1220; --card:rgba(255,255,255,.06); --line:rgba(255,255,255,.14);
+      --text:rgba(255,255,255,.92); --muted:rgba(255,255,255,.70);
+      --shadow:0 16px 50px rgba(0,0,0,.35); --r:18px; --r2:14px; --max:980px;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:var(--sans); color:var(--text); line-height:1.55;
+      background:
+        radial-gradient(1200px 800px at 20% 10%, rgba(125, 211, 252, 0.18), transparent 60%),
+        radial-gradient(1000px 700px at 90% 30%, rgba(167, 139, 250, 0.16), transparent 55%),
+        radial-gradient(900px 600px at 40% 95%, rgba(52, 211, 153, 0.10), transparent 55%),
+        var(--bg);
+    }
+    a{color:#7dd3fc; text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 16px 70px}
+    .hero{
+      padding:26px 20px; border-radius:var(--r); border:1px solid var(--line);
+      background:linear-gradient(135deg, rgba(255,255,255,.09), rgba(255,255,255,.04));
+      box-shadow:var(--shadow);
+    }
+    h1{margin:0; font-size:clamp(26px, 3.2vw, 40px); letter-spacing:-.02em}
+    .sub{margin:8px 0 0; color:var(--muted)}
+    .pillrow{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px}
+    .pill{padding:8px 11px; border-radius:999px; border:1px solid var(--line); background:rgba(255,255,255,.06); color:var(--muted); font-size:13px}
+    .grid{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:16px}
+    @media (max-width: 860px){.grid{grid-template-columns:1fr}}
+    .card{padding:18px; border-radius:var(--r); border:1px solid var(--line); background:var(--card); box-shadow:0 10px 26px rgba(0,0,0,.22)}
+    .card h2{margin:0 0 10px; font-size:18px}
+    .kv{display:grid; grid-template-columns:160px 1fr; gap:10px 14px; margin-top:12px; padding-top:12px; border-top:1px dashed var(--line)}
+    .k{color:var(--muted)} .v{color:var(--text)} .mono{font-family:var(--mono)}
+    @media (max-width: 680px){.kv{grid-template-columns:1fr}}
+    .btnrow{display:flex; flex-wrap:wrap; gap:10px; margin-top:14px}
+    .btn{
+      display:inline-flex; align-items:center; gap:8px; padding:10px 12px;
+      border-radius:12px; border:1px solid var(--line); background:rgba(255,255,255,.06);
+      color:var(--text); font-weight:600; font-size:14px;
+    }
+    .btn:hover{background:rgba(255,255,255,.10); text-decoration:none}
+    .btn.primary{background:linear-gradient(135deg, rgba(125,211,252,.20), rgba(167,139,250,.14)); border-color:rgba(125,211,252,.45)}
+    ul{margin:10px 0 0; padding-left:18px; color:var(--muted)}
+    .split{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+    @media (max-width: 860px){.split{grid-template-columns:1fr}}
+    footer{margin-top:22px; text-align:center; color:var(--muted); font-size:13px}
+    .note{color:var(--muted); font-size:14px; margin-top:10px}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>Zuhause mit Aussicht</h1>
+      <p class="sub">Neustadt in Holstein · Deutschland</p>
+
+      <div class="pillrow">
+        <div class="pill">1 Apartment · 3 Schlafzimmer</div>
+        <div class="pill">4 Erwachsene · 6 Nächte</div>
+        <div class="pill">Meerblick · WLAN kostenlos</div>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h2>Adresse & Kontakt</h2>
+          <div class="kv">
+            <div class="k">Adresse</div>
+            <div class="v">9 Schiffbrücke, 23730 Neustadt in Holstein, Deutschland</div>
+
+            <div class="k">Telefon</div>
+            <div class="v"><a href="tel:+491608526157">+49 160 8526157</a></div>
+
+            <div class="k">GPS</div>
+            <div class="v mono">N 054° 6.366, E 10° 48.701</div>
+          </div>
+
+          <div class="btnrow">
+            <a class="btn primary" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/search/?api=1&query=54.1061,10.811683">📍 In Google Maps öffnen</a>
+            <a class="btn" href="tel:+491608526157">📞 Anrufen</a>
+          </div>
+
+          <p class="note">Koordinaten-Link nutzt Dezimalgrad (aus den angegebenen Koordinaten umgerechnet).</p>
+        </div>
+
+        <div class="card">
+          <h2>Buchung auf einen Blick</h2>
+          <div class="kv">
+            <div class="k">Name des Gastes</div>
+            <div class="v">Dominic Harapat</div>
+
+            <div class="k">Gruppe</div>
+            <div class="v">4 Erwachsene</div>
+
+            <div class="k">Verpflegung</div>
+            <div class="v">Keine Mahlzeit inbegriffen</div>
+
+            <div class="k">Stornierung</div>
+            <div class="v"><strong>Kein Geld zurück</strong> (nicht kostenlos stornierbar)</div>
+          </div>
+
+          <ul>
+            <li>WLAN in allen Bereichen kostenfrei</li>
+            <li>Keine Parkmöglichkeiten verfügbar</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid" style="margin-top:14px">
+      <div class="card">
+        <h2>Anreise & Abreise</h2>
+
+        <div class="split">
+          <div class="card" style="background:rgba(255,255,255,.04); border-radius:var(--r2)">
+            <h3 style="margin:0 0 8px; font-size:16px">Anreise</h3>
+            <div class="kv" style="border-top:0; padding-top:0">
+              <div class="k">Datum</div><div class="v">Montag, 4. Mai</div>
+              <div class="k">Zeitfenster</div><div class="v">16:00 – 21:00</div>
+            </div>
+          </div>
+
+          <div class="card" style="background:rgba(255,255,255,.04); border-radius:var(--r2)">
+            <h3 style="margin:0 0 8px; font-size:16px">Abreise</h3>
+            <div class="kv" style="border-top:0; padding-top:0">
+              <div class="k">Datum</div><div class="v">Sonntag, 10. Mai</div>
+              <div class="k">Bis</div><div class="v">11:00</div>
+            </div>
+          </div>
+        </div>
+
+        <p class="note">Bitte die voraussichtliche Ankunftszeit vorab mitteilen.</p>
+      </div>
+
+      <div class="card">
+        <h2>Apartment & Ausstattung</h2>
+        <p class="note" style="margin-top:0">
+          Highlights: eigenes Badezimmer, Meerblick, Blick auf den Innenhof, Küche, Waschmaschine, privater Eingang.
+        </p>
+
+        <h3 style="margin: 12px 0 6px; font-size:16px">Küche</h3>
+        <ul>
+          <li>Backofen, Herdplatte, Mikrowelle, Kühlschrank, Toaster</li>
+          <li>Spülmaschine, Küchenutensilien</li>
+          <li>Kaffeemaschine, Wasserkocher, Kaffee-/Teezubehör</li>
+        </ul>
+
+        <h3 style="margin: 12px 0 6px; font-size:16px">Wohnen & Haushalt</h3>
+        <ul>
+          <li>TV / Flachbild-TV, Radio</li>
+          <li>Waschmaschine, Wäscheständer</li>
+          <li>Heizung, Bügeleisen</li>
+        </ul>
+
+        <h3 style="margin: 12px 0 6px; font-size:16px">Weitere Details</h3>
+        <ul>
+          <li>Gartenmöbel, Essbereich im Freien, Grill</li>
+          <li>Hochstuhl, Brettspiele/Puzzles</li>
+          <li>Bücher / DVDs / Musik für Kinder</li>
+          <li>Bettwäsche/Handtücher gegen Aufpreis</li>
+          <li>Obere Stockwerke nur über Treppe erreichbar</li>
+        </ul>
+      </div>
+
+      <div class="card" style="grid-column:1 / -1">
+        <h2>Wichtige Informationen & Regeln</h2>
+        <ul>
+          <li>Keine Junggesellen-/Junggesellinnenabschiede oder ähnliche Feiern erlaubt.</li>
+          <li>Gäste unter 18 Jahren nur mit Elternteil oder gesetzlichem Vertreter.</li>
+          <li>Keine Parkmöglichkeiten verfügbar.</li>
+          <li>WLAN in allen Bereichen kostenfrei.</li>
+          <li>Zusatzkosten (z. B. Zustellbett) sind ggf. nicht im Gesamtpreis enthalten.</li>
+          <li>Eventuell anfallende Steuern können auch bei Nichtanreise oder Stornierung berechnet werden.</li>
+          <li>Stornierungsfristen gelten gemäß der Zeitzone der Unterkunft.</li>
+        </ul>
+
+        <div class="btnrow">
+          <a class="btn primary" href="tel:+491608526157">📞 Rückfragen? Jetzt anrufen</a>
+          <a class="btn" target="_blank" rel="noopener"
+             href="https://www.google.com/maps/search/?api=1&query=54.1061,10.811683">🧭 Route öffnen</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      © <span id="y"></span> · One-Pager (Buchungsübersicht)
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
 
